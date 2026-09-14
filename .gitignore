@@ -1,0 +1,32 @@
+# never commit API keys
+.env
+
+# data you supply or rebuild -- see data/README.md
+# (this repo ships no images and no ground truth)
+data/sample/
+data/musedata_cache/
+
+# runtime output
+work/
+stage2_omr/output/
+stage2_omr/yolo/
+stage2_omr/debug/
+stage2_omr/test*.jpg
+**/out/
+**/results/
+**/summary/
+*.log
+
+# large model file fetched by scripts/fetch_weights.sh
+**/omr/checkpoints/*/model.onnx
+
+# per-page decode cache (~660 MB per page)
+*.npy
+*_stafflist.pkl
+*_staffList.pkl
+*_barlist.pkl
+
+# python
+__pycache__/
+*.pyc
+.DS_Store

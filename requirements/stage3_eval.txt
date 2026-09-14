@@ -1,0 +1,11 @@
+# Stage 3, evaluation.
+# TEDn needs zss 1.2.0 (the version the paper's numbers were computed with) and Levenshtein.
+# OMR-NED shells out to musicdiff, which wants a newer music21 than the OMR stage --
+# keep this in its own environment.
+zss==1.2.0
+six
+Levenshtein
+numpy
+psutil
+musicdiff==5.2
+music21>=9.9.1

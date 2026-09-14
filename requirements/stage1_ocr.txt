@@ -1,0 +1,17 @@
+# Stage 1, step 1: full-page OCR with docTR.
+# Install into the `omr-meta` environment (see README > Requirements).
+
+python-doctr[torch]==1.0.0
+torch>=2.9.0
+torchvision>=0.24.0
+numpy>=2.2.0
+Pillow>=12.0.0
+opencv-python>=4.12.0
+matplotlib>=3.10.0
+scikit-image>=0.25.0
+easyocr>=1.7.0
+pytesseract>=0.3.0
+onnx>=1.19.0
+langdetect>=1.0.9
+shapely>=2.1.0
+tqdm>=4.67.0

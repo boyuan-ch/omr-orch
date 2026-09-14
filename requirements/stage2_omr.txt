@@ -1,0 +1,26 @@
+# Stage 2: the OMR backbone (run_omr.py). Install into its own `omr-core` environment.
+#
+# numpy is pinned to 1.26.4 because the vendored omr/ package does not build against numpy 2.x.
+# This is why stage 2 cannot share an environment with stages 1 and 3.
+# Without a CUDA GPU, replace onnxruntime-gpu with onnxruntime.
+
+torch==2.5.1
+torchvision==0.20.1
+torchaudio
+numpy==1.26.4
+Pillow>=11.0.0
+opencv-python>=4.10.0
+onnxruntime-gpu>=1.23.0
+ultralytics>=8.4.0
+pandas>=2.3.0
+scikit-image>=0.25.0
+scikit-learn>=1.7.0
+scipy>=1.15.0
+matplotlib>=3.10.0
+albumentations>=2.0.0
+timm>=1.0.0
+einops>=0.8.0
+omegaconf>=2.3.0
+transformers>=4.53.0
+tqdm>=4.67.0
+loguru>=0.7.0

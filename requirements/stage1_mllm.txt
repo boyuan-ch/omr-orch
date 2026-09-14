@@ -1,0 +1,15 @@
+# Stage 1, steps 6 and 8 (MLLM). Qwen/InternVL run locally from Hugging Face weights.
+# Turing-class GPUs (sm_75, e.g. TITAN RTX) have no bf16 and no flash-attn2, so the backends
+# load in FP16 with attn_implementation="sdpa".
+# Install the torch build that matches your NVIDIA driver: a torch compiled against a newer CUDA
+# than the driver supports falls back to CPU silently, and an 8B VLM on CPU is unusably slow.
+# Check with: python -c "import torch; print(torch.cuda.is_available())"
+torch>=2.4
+transformers>=4.57          # Qwen3-VL support
+accelerate>=1.0
+einops
+timm
+pillow
+# optional: only needed for --backend gpt
+openai>=2.9
+python-dotenv>=1.0

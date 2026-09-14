@@ -1,0 +1,16 @@
+# Stage 1, steps 2-5 and b/7/f: YOLO staff detection, OCR filtering, CSV assembly.
+# Install into the `omr-meta` environment (see README > Requirements).
+
+torch>=2.9.0
+torchvision>=0.24.0
+numpy>=2.1.0
+Pillow>=10.4.0
+opencv-python>=4.12.0
+pandas>=2.3.0
+matplotlib>=3.10.0
+scikit-image>=0.25.0
+ultralytics==8.3.4
+openai>=2.14.0
+omrdatasettools>=1.4.0
+tqdm>=4.66.0
+seaborn>=0.13.0

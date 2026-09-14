@@ -1,0 +1,39 @@
+cff-version: 1.2.0
+message: "If this code is useful to you, please cite this repository."
+type: software
+title: "Optical Music Recognition for Orchestral Full Scores with Varying Staff Layouts"
+abstract: >-
+  A pipeline-based OMR system for orchestral full scores. An MLLM combined with OCR parses the page
+  layout and per-staff instrument metadata; a segmentation-based OMR backbone uses that metadata to
+  assemble a multi-instrument symbolic score, handling a staff count that varies from system to
+  system.
+repository-code: "https://github.com/boyuan-ch/omr-varying-staff"
+license: MIT
+year: 2026
+authors:
+  - alias: "boyuan-ch"
+references:
+  - type: data
+    title: "The Nine Symphonies of Beethoven: A Digital Edition"
+    year: 2009
+    publisher:
+      name: "Center for Computer Assisted Research in the Humanities (CCARH), Stanford University"
+    url: "https://www.ccarh.org/publications/beethoven-symphonies/"
+    notes: >-
+      Source of the symbolic ground truth this project evaluates against, via the MuseData format.
+      Not redistributed here; see data/README.md.
+    authors:
+      - family-names: "Sapp"
+        given-names: "Craig Stuart"
+      - family-names: "Anthony"
+        given-names: "Don"
+      - family-names: "Bennion"
+        given-names: "Francis"
+      - family-names: "Correia, Jr."
+        given-names: "Edmund"
+      - family-names: "Hewlett"
+        given-names: "Walter"
+      - family-names: "Selfridge-Field"
+        given-names: "Eleanor"
+      - family-names: "Kornstädt"
+        given-names: "Andreas"
